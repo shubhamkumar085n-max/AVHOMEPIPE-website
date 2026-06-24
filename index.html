@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AV Homepipe | Luxury Edition Cemented Piping & Flow Solutions</title>
+  <meta name="description" content="Discover the Luxury Edition of reinforced cemented piping solutions. Precision-engineered AV Homepipes built for extreme earth loads, high structural durability, and efficient flow.">
+  <link rel="stylesheet" href="./style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Global Loading / Preloader Screen -->
+  <div id="preloader">
+    <div class="loader-content">
+      <div class="logo-loader">
+        <span class="logo-bold">AV</span>
+        <span class="logo-light">HOMEPIPE</span>
+      </div>
+      <div class="loader-bar-container">
+        <div id="loader-bar"></div>
+      </div>
+      <p class="loader-text">Loading precision animation... <span id="loader-percentage">0%</span></p>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="main-header">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-accent">AV</span>
+        <span class="logo-main">HOMEPIPE</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#animation-section" class="nav-link active">Home</a>
+        <a href="#process-start" class="nav-link">Process</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#calculator" class="nav-link">Calculator</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="#contact" class="btn-primary-glow">Get a Quote</a>
+      </div>
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Website Container -->
+  <main>
+    <!-- Scroll Animation Section -->
+    <section id="animation-section" class="scroll-anim-container">
+      <!-- Scroll Anchor for Process Navigation -->
+      <div id="process-start" style="position: absolute; top: 45vh;"></div>
+
+      <div class="sticky-wrapper">
+        <div class="canvas-container">
+          <canvas id="scroll-canvas"></canvas>
+        </div>
+
+        <!-- Hero Overlay (Active at the start of scroll) -->
+        <div class="hero-overlay-wrapper">
+          <div class="glowing-mesh"></div>
+          <div class="hero-content">
+            <div class="badge">Luxury Edition Fluid Infrastructure</div>
+            <h1 class="hero-brand-title">AV HOMEPIPE MANUFACTURING</h1>
+            <h2 class="hero-brand-subtitle">THE INDIAN COMPANY</h2>
+            <p class="hero-subtitle" style="margin-top: 24px;">
+              Premium reinforced concrete AV Homepipes. Engineered for extreme subterranean earth load, heavy traffic weight, and decades of high-capacity flow.
+            </p>
+            <div class="hero-buttons">
+              <a href="#process-start" class="btn-primary">Explore the Process</a>
+              <a href="#calculator" class="btn-secondary">Spec Calculator</a>
+            </div>
+          </div>
+          
+          <div class="scroll-indicator-container">
+            <div class="mouse-icon">
+              <div class="wheel"></div>
+            </div>
+            <span class="scroll-text">Scroll to Extrude</span>
+          </div>
+        </div>
+        
+        <!-- Scrolling Caption Overlays -->
+        <div class="scroll-captions">
+          <div class="caption-card" data-frame-start="40" data-frame-end="90">
+            <span class="caption-step">01 / Material Casting</span>
+            <h3>Precision Concrete Mixing</h3>
+            <p>Our manufacturing process begins with premium Portland cement, graded sand-gravel aggregates, and high-tensile steel reinforcements for extreme structural strength.</p>
+          </div>
+          
+          <div class="caption-card" data-frame-start="105" data-frame-end="160">
+            <span class="caption-step">02 / Dynamic Spinning</span>
+            <h3>Centrifugal Consolidation</h3>
+            <p>Advanced centrifugal spinning fuses the liquid concrete matrix around the reinforced steel cage, eliminating air voids to guarantee uniform wall density.</p>
+          </div>
+          
+          <div class="caption-card" data-frame-start="175" data-frame-end="230">
+            <span class="caption-step">03 / Steam Curing</span>
+            <h3>Accelerated Hydration</h3>
+            <p>High-temperature steam curing chambers lock in moisture and heat, accelerating chemical crystallization to reach design compression strength in record time.</p>
+          </div>
+          
+          <div class="caption-card" data-frame-start="245" data-frame-end="296">
+            <span class="caption-step">04 / Quality Certification</span>
+            <h3>Flawless Subterranean Load</h3>
+            <p>Every cemented pipe is hydrotested and load-certified to exceed IS 458 Indian standards, ensuring a 50+ year maintenance-free infrastructure lifetime.</p>
+          </div>
+        </div>
+
+        <div class="progress-indicator">
+          <span class="current-step">01</span>
+          <div class="step-progress-bar">
+            <div id="active-step-progress"></div>
+          </div>
+          <span class="total-steps">04</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="subtitle">Built for Generations</span>
+          <h2>Engineered for Extremes</h2>
+          <p>Designed to support massive external soil pressure and high hydraulic volume across highway culverts, municipal sewage, drainage, and irrigation networks.</p>
+        </div>
+        
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="card-glow"></div>
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3>Heavy Load Resistance</h3>
+            <p>Reinforced steel cage configuration handles high traffic loads (NP2/NP3 Class) and massive earth overburdens without fracture.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-glow"></div>
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>50+ Year Durability</h3>
+            <p>Unmatched resistance to acid, salt attacks, soil shifting, and environmental factors, ensuring a multi-decade operational lifespan.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-glow"></div>
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Smooth Hydraulic Bore</h3>
+            <p>Our centrifugal spinning leaves a smooth inner concrete surface, preventing sediment deposition and ensuring optimal gravity flow.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="card-glow"></div>
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h3>Eco-Friendly Minerals</h3>
+            <p>100% natural, non-hazardous concrete composition. Free from microplastics, chemicals, or toxins. Safe for ground water flow.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Calculator Section -->
+    <section id="calculator" class="calculator-section">
+      <div class="container">
+        <div class="calc-layout">
+          <div class="calc-info">
+            <span class="subtitle">Quick Specs</span>
+            <h2>Cemented Pipe Spec & Cost Estimator</h2>
+            <p>Specify your required diameter and concrete class. Our live system calculates load class ratings, estimated pipe weight, and total budget estimates (including taxes, GST, and delivery to Bihar or other states).</p>
+            <div class="info-badges">
+              <div class="info-badge">
+                <span class="badge-title">Standard Compliance</span>
+                <span class="badge-value">IS 458:2003 Standards</span>
+              </div>
+              <div class="info-badge">
+                <span class="badge-title">Fixed Pipe Length</span>
+                <span class="badge-value">8 Feet (2.44 Meters)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-card">
+            <div class="calc-field">
+              <label for="calc-destination">Delivery Location</label>
+              <select id="calc-destination">
+                <option value="bihar" data-factor="1.0">Bihar (Local State Shipping)</option>
+                <option value="interstate" data-factor="1.3">Other States (Interstate Shipping)</option>
+              </select>
+            </div>
+
+            <div class="calc-field">
+              <label for="calc-diameter">Nominal Diameter (Feet)</label>
+              <select id="calc-diameter">
+                <option value="0.50" data-weight="160" selected>0.50 Feet (6 inches)</option>
+                <option value="0.75" data-weight="280">0.75 Feet (9 inches)</option>
+                <option value="1.00" data-weight="420">1.00 Feet (12 inches)</option>
+                <option value="1.50" data-weight="860">1.50 Feet (18 inches)</option>
+                <option value="2.00" data-weight="1420">2.00 Feet (24 inches)</option>
+                <option value="3.00" data-weight="2780">3.00 Feet (36 inches)</option>
+              </select>
+            </div>
+
+            <div class="calc-field">
+              <label for="calc-class">Pipe Strength Class</label>
+              <select id="calc-class">
+                <option value="2mp" data-factor="1.0">2MP Class (Standard Drainage)</option>
+                <option value="3mp" data-factor="1.35">3MP Class (High Pressure - Made on Order Only)</option>
+              </select>
+            </div>
+
+            <div class="results-grid">
+              <div class="result-item">
+                <span class="result-lbl">Pipe Length</span>
+                <span class="result-val">8 Feet (Fixed)</span>
+              </div>
+              <div class="result-item">
+                <span class="result-lbl">Total Weight</span>
+                <span class="result-val" id="res-weight">160 kg</span>
+              </div>
+              <div class="result-item">
+                <span class="result-lbl">Strength Spec</span>
+                <span class="result-val" id="res-pn">2 MPa (NP2)</span>
+              </div>
+              <div class="result-item highlight">
+                <span class="result-lbl">Price (GST & Shipping incl.)</span>
+                <span class="result-val" id="res-cost">₹1,850</span>
+              </div>
+            </div>
+            <button class="btn-primary-full" id="calc-cta-btn">Order Quote With These Specs</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Quote Form Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-layout">
+          <div class="contact-header">
+            <span class="subtitle">Get in Touch</span>
+            <h2>Request a Custom Quote</h2>
+            <p>Our sales engineering team provides full-scale technical layouts, material sheets, and optimized cost options for your infrastructure projects.</p>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="method-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div>
+                  <h4>Phone Call</h4>
+                  <p>+1 (800) 555-PIPE</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <div class="method-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <h4>Sales & Support</h4>
+                  <p>sales@avhomepipe.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-wrapper">
+            <form id="quote-form" class="premium-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Full Name</label>
+                  <input type="text" id="contact-name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Email Address</label>
+                  <input type="email" id="contact-email" placeholder="john@company.com" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-company">Company</label>
+                  <input type="text" id="contact-company" placeholder="Acme Construction">
+                </div>
+                <div class="form-group">
+                  <label for="contact-phone">Phone Number</label>
+                  <input type="tel" id="contact-phone" placeholder="+1 (555) 000-0000">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contact-message">Project Description & Requirements</label>
+                <textarea id="contact-message" rows="4" placeholder="Tell us about your pipeline size, flow specs, and scheduling requirements..." required></textarea>
+              </div>
+              <button type="submit" class="btn-submit-glow">
+                <span>Send Quote Request</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Success Modal for Quote Form -->
+  <div id="success-modal" class="modal">
+    <div class="modal-content">
+      <div class="success-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      </div>
+      <h3>Quote Request Sent!</h3>
+      <p>Thank you for reaching out. One of our Senior Technical Sales Engineers will contact you with a full quote sheet within the next 4 business hours.</p>
+      <button class="btn-primary" id="close-modal-btn">Close Window</button>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="logo-accent">AV</span>
+        <span class="logo-main">HOMEPIPE</span>
+        <p>Designing and manufacturing next-generation industrial, chemical, and domestic piping systems since 1994.</p>
+      </div>
+      <div class="footer-links">
+        <div class="link-group">
+          <h5>Products</h5>
+          <a href="#">Industrial Piping</a>
+          <a href="#">Municipal Mains</a>
+          <a href="#">SDR Terminals</a>
+          <a href="#">High-Temp Tubes</a>
+        </div>
+        <div class="link-group">
+          <h5>Company</h5>
+          <a href="#">About Us</a>
+          <a href="#">Quality Assurance</a>
+          <a href="#">Case Studies</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 AV Homepipe Manufacturing Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
